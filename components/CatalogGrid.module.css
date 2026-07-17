@@ -1,0 +1,49 @@
+.catalog { padding: 18px 0 38px; }
+.intro { height: 290px; display: grid; grid-template-columns: 38% 62%; align-items: center; position: relative; }
+.cat { position: absolute; left: 38px; bottom: -2px; width: 440px; height: 300px; object-fit: contain; object-position: center bottom; }
+.heading { grid-column: 2; padding-left: 26px; }
+.heading h1 { margin: 0 0 12px; font-size: 45px; line-height: 1; letter-spacing: -.035em; }
+.heading p { margin: 0; color: var(--muted); font-size: 18px; }
+.grid { display: grid; grid-template-columns: 1.18fr 1fr 1fr; grid-template-rows: repeat(2, 245px); gap: 22px; }
+.card { position: relative; min-width: 0; overflow: hidden; border-radius: 28px; background: #fff; box-shadow: 0 18px 55px rgba(0,0,0,.065); isolation: isolate; transition: transform .25s ease, box-shadow .25s ease; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 24px 68px rgba(0,0,0,.10); }
+.copy { position: relative; z-index: 3; width: 55%; padding: 28px 0 0 30px; }
+.copy h2 { margin: 0 0 14px; font-size: 22px; line-height: 1.05; }
+.copy p { max-width: 190px; min-height: 46px; margin: 0 0 14px; color: var(--muted); font-size: 13px; line-height: 1.35; }
+.copy span { font-size: 13px; }
+.art { position: absolute; z-index: 1; right: 28px; bottom: 22px; width: 46%; height: 56%; padding: 22px; color: #aaa; stroke-width: .8; filter: drop-shadow(0 14px 12px rgba(0,0,0,.12)); }
+.arrow { position: absolute; z-index: 4; left: 30px; bottom: 30px; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: #050505; color: white; }
+.arrow svg { width: 22px; }
+.plate { grid-row: span 2; }
+.plate .copy { width: 58%; padding: 38px 0 0 38px; }
+.plate .copy h2 { font-size: 27px; }
+.plate .copy p { max-width: 215px; min-height: 70px; font-size: 14px; }
+.plate .art { right: 24px; bottom: 34px; width: 66%; height: 64%; }
+.stockBar { min-height: 96px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 22px; margin-top: 28px; padding: 0 28px; border-radius: 22px; background: #fafafa; }
+.stockBar > svg { width: 45px; height: 45px; stroke-width: 1.5; }
+.stockBar div { display: grid; gap: 8px; }
+.stockBar span { color: var(--muted); font-size: 14px; }
+.stockBar a { display: flex; align-items: center; gap: 28px; }
+.stockBar a svg { width: 24px; }
+
+@media (max-width: 1100px) {
+  .intro { grid-template-columns: 44% 56%; }
+  .heading { grid-column: 2; }
+  .grid { grid-template-columns: 1fr 1fr; grid-template-rows: 360px repeat(2, 235px); }
+  .plate { grid-column: 1 / -1; grid-row: auto; }
+  .plate .art { right: 10%; }
+}
+
+@media (max-width: 720px) {
+  .catalog { padding-top: 0; }
+  .intro { height: 360px; display: block; padding-top: 44px; }
+  .heading { padding: 0; position: relative; z-index: 2; }
+  .heading h1 { max-width: 290px; font-size: 42px; }
+  .heading p { max-width: 270px; line-height: 1.35; }
+  .cat { left: auto; right: -70px; bottom: -18px; width: 320px; height: 240px; }
+  .grid { grid-template-columns: 1fr; grid-template-rows: 410px repeat(4, 245px); }
+  .plate { grid-column: auto; }
+  .plate .art { right: -38px; }
+  .stockBar { grid-template-columns: auto 1fr; padding-block: 22px; }
+  .stockBar a { grid-column: 1 / -1; justify-content: space-between; padding-top: 14px; border-top: 1px solid #ddd; }
+}

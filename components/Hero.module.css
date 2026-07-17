@@ -1,0 +1,39 @@
+.hero { min-height: 684px; display: grid; grid-template-columns: 49% 51%; position: relative; overflow: hidden; }
+.content { position: relative; z-index: 3; padding: 92px 0 54px; align-self: stretch; display: flex; flex-direction: column; align-items: flex-start; }
+.content h1 { max-width: 690px; margin: 0; font-size: clamp(56px, 4.35vw, 69px); line-height: .98; letter-spacing: -.052em; font-weight: 800; }
+.uppercase { text-transform: uppercase; }
+.content p { max-width: 600px; margin: 32px 0 0; font-size: 22px; line-height: 1.34; }
+.cta { width: min(436px, 100%); min-height: 80px; display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding: 0 38px 0 68px; border-radius: 999px; background: #0b0b0b; color: #fff; font-size: 22px; font-weight: 700; transition: transform .25s ease, box-shadow .25s ease; }
+.cta:hover { transform: translateY(-3px); box-shadow: 0 16px 36px rgba(0,0,0,.17); }
+.cta svg { width: 34px; height: 34px; stroke-width: 1.7; }
+.dots { position: absolute; left: 0; bottom: 22px; display: flex; gap: 8px; }
+.dots button { width: 34px; height: 4px; padding: 0; border: 0; border-radius: 99px; background: #d4d4d4; cursor: pointer; }
+.dots button[aria-current="true"] { background: #111; }
+.art { position: relative; min-width: 0; }
+.catCrop { position: absolute; inset: 14px -24px 28px -20px; display: flex; align-items: center; justify-content: center; }
+.heroAsset { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; }
+
+@media (max-width: 1120px) {
+  .hero { min-height: 620px; grid-template-columns: 54% 46%; }
+  .content { padding-top: 72px; }
+  .content h1 { font-size: clamp(48px, 5.7vw, 62px); }
+  .content p { font-size: 19px; max-width: 510px; }
+}
+
+@media (max-width: 800px) {
+  .hero { min-height: 760px; grid-template-columns: 1fr; grid-template-rows: auto 340px; }
+  .content { padding: 48px 0 24px; }
+  .content h1 { font-size: clamp(40px, 11vw, 58px); max-width: 650px; }
+  .content p { margin-top: 22px; font-size: 17px; line-height: 1.45; }
+  .cta { min-height: 64px; width: 100%; margin-top: 30px; padding-inline: 28px; font-size: 18px; }
+  .dots { display: none; }
+  .art { min-height: 340px; }
+  .catCrop { inset: 0 -24px; }
+}
+
+@media (max-width: 470px) {
+  .hero { min-height: 720px; grid-template-rows: auto 290px; }
+  .content { padding-top: 36px; }
+  .content h1 { font-size: 39px; }
+  .catCrop { inset-inline: -16px; }
+}

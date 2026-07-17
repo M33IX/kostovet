@@ -1,0 +1,14 @@
+.git
+.gitignore
+.next
+.pnpm-store
+.qa
+.playwright-cli
+.agents
+.docx-render
+node_modules
+npm-debug.log
+pnpm-debug.log
+Dockerfile*
+docker-compose*.yml
+README.md

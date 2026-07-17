@@ -1,0 +1,34 @@
+# dependencies
+/node_modules
+/.pnpm-store/
+/.pnp
+.pnp.*
+
+# Next.js
+/.next/
+/out/
+
+# production and logs
+/build
+*.log
+
+# local configuration and credentials
+.env
+.env.*
+!.env.example
+credentials/
+config/private/
+
+# operating systems and editors
+.DS_Store
+Thumbs.db
+*.swp
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# browser and document QA
+.playwright-cli/
+.docx-render/
+.qa/

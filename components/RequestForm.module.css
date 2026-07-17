@@ -1,0 +1,14 @@
+.form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.form label { display: grid; gap: 9px; font-weight: 700; }
+.form input, .form textarea { width: 100%; min-height: 52px; padding: 14px 16px; border: 1px solid #bbb; border-radius: 14px; background: #fff; font-weight: 400; outline: 0; }
+.form input:focus, .form textarea:focus { border-color: #111; box-shadow: 0 0 0 3px rgba(0,0,0,.08); }
+.message, .consent, .form button, .error { grid-column: 1 / -1; }
+.consent { grid-template-columns: auto 1fr !important; align-items: start; font-size: 14px; font-weight: 400 !important; line-height: 1.45; }
+.consent input { width: 22px; min-height: 22px; margin-top: 1px; }
+.consent a { text-decoration: underline; }
+.form button:disabled { opacity: .55; cursor: wait; }
+.error { margin: 0; color: var(--danger); }
+.honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; }
+.success { display: grid; gap: 10px; padding: 28px; border-radius: 20px; background: #eff8f2; color: var(--success); }
+.success strong { font-size: 22px; }
+@media (max-width: 620px) { .form { grid-template-columns: 1fr; } .form label, .message, .consent, .form button, .error { grid-column: 1; } }

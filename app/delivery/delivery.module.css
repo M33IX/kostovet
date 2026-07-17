@@ -1,0 +1,11 @@
+.tableWrap { overflow-x: auto; padding-bottom: 28px; }
+.tableWrap table { width: 100%; border-collapse: collapse; font-size: 18px; }
+.tableWrap th, .tableWrap td { padding: 24px; border-bottom: 1px solid #d7d7d7; text-align: left; vertical-align: top; }
+.tableWrap thead th { border-bottom-color: #111; font-size: 14px; text-transform: uppercase; letter-spacing: .08em; }
+.tableWrap tbody th { width: 22%; }
+.weekend { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 44px; margin-top: 28px; padding: 46px; border-radius: 28px; background: #0b0b0b; color: #fff; }
+.weekend span { color: #ffcc54; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.weekend h2 { max-width: 690px; margin: 12px 0; font-size: 36px; }
+.weekend p { max-width: 760px; margin: 0; color: #c8c8c8; line-height: 1.55; }
+.weekend :global(.primary-button) { border-color: #fff; background: #fff; color: #111; white-space: nowrap; }
+@media (max-width: 780px) { .weekend { grid-template-columns: 1fr; padding: 30px 24px; } .weekend h2 { font-size: 28px; } }

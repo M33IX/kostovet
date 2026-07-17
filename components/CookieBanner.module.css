@@ -1,0 +1,8 @@
+.banner { position: fixed; z-index: 1000; right: 24px; bottom: 24px; width: min(560px, calc(100vw - 48px)); display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; padding: 22px; border: 1px solid #ddd; border-radius: 20px; background: rgba(255,255,255,.97); box-shadow: 0 18px 70px rgba(0,0,0,.16); backdrop-filter: blur(12px); }
+.banner p { margin: 0; font-size: 14px; line-height: 1.45; }
+.banner p a { text-decoration: underline; }
+.banner div { display: flex; gap: 8px; }
+.banner button { min-height: 44px; padding: 0 16px; border-radius: 999px; cursor: pointer; }
+.decline { border: 1px solid #111; background: #fff; }
+.accept { border: 1px solid #111; background: #111; color: #fff; }
+@media (max-width: 620px) { .banner { grid-template-columns: 1fr; right: 16px; bottom: 16px; width: calc(100vw - 32px); } .banner div { justify-content: stretch; } .banner button { flex: 1; } }

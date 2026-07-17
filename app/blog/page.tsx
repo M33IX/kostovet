@@ -1,0 +1,9 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight, CalendarDays, Clock3 } from "lucide-react";
+import { Footer } from "@/components/Footer";
+import { ProductArt } from "@/components/ProductArt";
+import { articles } from "@/lib/articles";
+import styles from "../marketing.module.css";
+export const metadata:Metadata={title:"Блог",description:"Практические статьи, обзоры и рекомендации по ветеринарному остеосинтезу."};
+export default function BlogPage(){return <main id="main" className="page-main"><div className="site-shell"><nav className={styles.crumbs}><Link href="/">Главная</Link><span>/</span><b>Статьи</b></nav><section className={styles.blogHero}><div><h1>Полезные материалы<br/>для ветеринарных хирургов</h1><p>Практические статьи, обзоры и рекомендации по остеосинтезу, имплантам и работе ветеринарных клиник.</p></div><div className={styles.blogArt}><ProductArt shape="tplate"/></div></section><div className={styles.filters}>{["Все статьи","Остеосинтез","Импланты","Инструменты","Клинические случаи","Уход и реабилитация","Новости"].map((filter)=><button key={filter}>{filter}</button>)}</div><section className={styles.articleGrid}>{articles.map((article)=><Link className={styles.articleCard} href={`/blog/${article.slug}`} key={article.slug}><div className={styles.articleCover}><span>{article.category}</span><ProductArt shape={article.shape}/></div><div className={styles.articleCopy}><h2>{article.title}</h2><p>{article.excerpt}</p><div className={styles.articleMeta}><span><CalendarDays/>{article.date}</span><span><Clock3/>{article.time}</span><ArrowRight/></div></div></Link>)}</section><div className="content-section" style={{display:"flex",justifyContent:"center",gap:18}}><b className="primary-button">1</b><span className="secondary-button">2</span><span className="secondary-button">3</span><span className="secondary-button">…</span><span className="secondary-button">8</span></div></div><Footer/></main>}
