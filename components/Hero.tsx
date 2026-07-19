@@ -9,8 +9,8 @@ import styles from "./Hero.module.css";
 
 const slides = [
   {
-    title: "Импланты для остеосинтеза — со склада в Воронеже за 2 часа",
-    description: "По Воронежу — доставка за 2–4 часа. В другие города ЦЧР — на следующий день при заявке до 14:00. Работаем в выходные и праздники.",
+    title: "ИМПЛАНТЫ ДЛЯ остеосинтеза - со склада в Воронеже за 2 часа",
+    description: "По Воронежу - доставка за 2-4 часа.\nВ другие города ЦЧР - на следующий день\nпри заявке до 14:00.\nРаботаем в выходные и праздники.",
     image: "/assets/2.png",
     width: 1600,
     height: 1440,
@@ -60,7 +60,7 @@ export function Hero() {
   return (
     <section className={styles.hero} ref={root} aria-labelledby="hero-title">
       <div className={styles.content} ref={content}>
-        <h1 id="hero-title" className={active === 0 ? styles.uppercase : undefined}>{slide.title}</h1>
+        <h1 id="hero-title">{slide.title}</h1>
         <p>{slide.description}</p>
         <Link className={styles.cta} href="/catalog">
           <span>Проверить наличие</span><ArrowRight aria-hidden="true" />

@@ -2,13 +2,16 @@
 .gitignore
 .next
 .pnpm-store
+.pnpm-home
 .qa
 .playwright-cli
 .agents
 .docx-render
+макеты
 node_modules
 npm-debug.log
 pnpm-debug.log
+tsconfig.tsbuildinfo
 Dockerfile*
 docker-compose*.yml
 README.md

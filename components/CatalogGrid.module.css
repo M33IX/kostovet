@@ -1,28 +1,30 @@
 .catalog { padding: 18px 0 38px; }
-.intro { height: 290px; display: grid; grid-template-columns: 38% 62%; align-items: center; position: relative; }
-.cat { position: absolute; left: 38px; bottom: -2px; width: 440px; height: 300px; object-fit: contain; object-position: center bottom; }
-.heading { grid-column: 2; padding-left: 26px; }
-.heading h1 { margin: 0 0 12px; font-size: 45px; line-height: 1; letter-spacing: -.035em; }
-.heading p { margin: 0; color: var(--muted); font-size: 18px; }
-.grid { display: grid; grid-template-columns: 1.18fr 1fr 1fr; grid-template-rows: repeat(2, 245px); gap: 22px; }
+.intro { height: 268px; display: grid; grid-template-columns: 36% 64%; align-items: center; position: relative; }
+.cat { position: absolute; z-index: 2; left: 38px; bottom: -167px; width: 680px; height: 520px; object-fit: contain; object-position: center bottom; pointer-events: none; }
+.heading { grid-column: 2; padding-left: 16px; }
+.heading h1 { margin: 0 0 15px; font-size: 54px; line-height: 1; letter-spacing: -.035em; }
+.heading p { margin: 0; color: var(--muted); font-size: 21px; }
+.grid { display: grid; grid-template-columns: 1.27fr 1fr 1.04fr; grid-template-rows: repeat(2, 313px); gap: 26px 30px; }
 .card { position: relative; min-width: 0; overflow: hidden; border-radius: 28px; background: #fff; box-shadow: 0 18px 55px rgba(0,0,0,.065); isolation: isolate; transition: transform .25s ease, box-shadow .25s ease; }
 .card:hover { transform: translateY(-5px); box-shadow: 0 24px 68px rgba(0,0,0,.10); }
-.copy { position: relative; z-index: 3; width: 55%; padding: 28px 0 0 30px; }
-.copy h2 { margin: 0 0 14px; font-size: 22px; line-height: 1.05; }
-.copy p { max-width: 190px; min-height: 46px; margin: 0 0 14px; color: var(--muted); font-size: 13px; line-height: 1.35; }
-.copy span { font-size: 13px; }
-.art { position: absolute; z-index: 1; right: 28px; bottom: 22px; width: 46%; height: 56%; padding: 22px; color: #aaa; stroke-width: .8; filter: drop-shadow(0 14px 12px rgba(0,0,0,.12)); }
-.arrow { position: absolute; z-index: 4; left: 30px; bottom: 30px; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: #050505; color: white; }
-.arrow svg { width: 22px; }
+.copy { position: relative; z-index: 3; width: 55%; padding: 38px 0 0 40px; }
+.copy h2 { margin: 0 0 17px; font-size: 28px; line-height: 1.05; }
+.copy p { max-width: 220px; min-height: 55px; margin: 0 0 17px; color: var(--muted); font-size: 16px; line-height: 1.35; }
+.copy span { font-size: 16px; }
+.art { position: absolute; z-index: 1; right: 28px; bottom: 22px; width: 49%; height: 59%; padding: 22px; color: #aaa; stroke-width: .8; filter: drop-shadow(0 14px 12px rgba(0,0,0,.12)); }
+.arrow { position: absolute; z-index: 4; left: 40px; bottom: 38px; width: 50px; height: 50px; display: grid; place-items: center; border-radius: 50%; background: #050505; color: white; }
+.arrow svg { width: 26px; }
 .plate { grid-row: span 2; }
-.plate .copy { width: 58%; padding: 38px 0 0 38px; }
-.plate .copy h2 { font-size: 27px; }
-.plate .copy p { max-width: 215px; min-height: 70px; font-size: 14px; }
-.plate .art { right: 24px; bottom: 34px; width: 66%; height: 64%; }
-.stockBar { min-height: 96px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 22px; margin-top: 28px; padding: 0 28px; border-radius: 22px; background: #fafafa; }
-.stockBar > svg { width: 45px; height: 45px; stroke-width: 1.5; }
+.plate .copy { width: 58%; padding: 185px 0 0 48px; }
+.plate .copy h2 { font-size: 34px; }
+.plate .copy p { max-width: 255px; min-height: 88px; font-size: 17px; }
+.plate .art { right: 24px; bottom: 42px; width: 82%; height: 64%; }
+.plate .arrow { left: 48px; bottom: 50px; }
+.stockBar { min-height: 124px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 28px; margin-top: 38px; padding: 0 38px; border-radius: 25px; background: #fafafa; }
+.stockBar > svg { width: 55px; height: 55px; stroke-width: 1.5; }
 .stockBar div { display: grid; gap: 8px; }
-.stockBar span { color: var(--muted); font-size: 14px; }
+.stockBar strong { font-size: 19px; }
+.stockBar span { color: var(--muted); font-size: 16px; }
 .stockBar a { display: flex; align-items: center; gap: 28px; }
 .stockBar a svg { width: 24px; }
 

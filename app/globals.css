@@ -18,7 +18,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  padding-top: 96px;
+  padding-top: 126px;
   background: var(--surface);
   color: var(--ink);
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -29,7 +29,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; }
 
-.site-shell { width: min(1320px, calc(100% - 48px)); margin-inline: auto; }
+.site-shell { width: min(1728px, 90vw); margin-inline: auto; }
 .page-main { min-height: 70vh; }
 .sr-only { position:absolute!important; width:1px!important; height:1px!important; padding:0!important; margin:-1px!important; overflow:hidden!important; clip:rect(0,0,0,0)!important; white-space:nowrap!important; border:0!important; }
 .skip-link {
@@ -56,9 +56,9 @@ img { max-width: 100%; }
 .secondary-button { border: 1px solid #111; background: white; color: #111; }
 .primary-button:hover, .secondary-button:hover { transform: translateY(-2px); box-shadow:0 10px 30px rgba(0,0,0,.10); }
 .primary-button:active, .secondary-button:active { transform: scale(.98); }
-.brand-logo { width: 118px; display: inline-flex; flex: 0 0 auto; }
+.brand-logo { width: 92px; display: inline-flex; flex: 0 0 auto; }
 .brand-logo__image { width: 100%; height: auto; display: block; }
-.brand-logo--footer { width: 138px; }
+.brand-logo--footer { width: 84px; }
 
 @media (max-width: 760px) {
   body { padding-top:80px; }

@@ -1,10 +1,10 @@
-.wrap { display: grid; grid-template-columns: .9fr 1.2fr 1.5fr; align-items: stretch; width: 100%; padding: 28px 0 36px; }
-.item { min-width: 0; display: flex; align-items: center; gap: 28px; padding: 6px 36px; border-left: 1px solid #bcbcbc; }
-.item:first-child { padding-left: 0; border-left: 0; }
-.item svg { flex: 0 0 auto; width: 58px; height: 58px; stroke-width: 1.5; }
+.wrap { display: grid; grid-template-columns: 1fr 1.25fr 1.32fr; align-items: stretch; width: 100%; padding: 28px 0 128px; }
+.item { min-width: 0; display: flex; align-items: center; gap: 50px; padding: 8px 78px; border-left: 1px solid #bcbcbc; }
+.item:first-child { padding-left: 8px; border-left: 0; }
+.item svg { flex: 0 0 auto; width: 72px; height: 72px; stroke-width: 1.5; }
 .item div { display: grid; gap: 10px; }
-.item strong { font-size: 19px; }
-.item span { color: var(--muted); line-height: 1.35; }
+.item strong { font-size: 22px; }
+.item span { color: var(--muted); font-size: 18px; line-height: 1.35; }
 .compact { padding: 22px 28px; border-radius: 22px; background: #fafafa; }
 .compact .item svg { width: 42px; height: 42px; }
 

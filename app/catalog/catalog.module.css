@@ -2,3 +2,45 @@
 @media(max-width:1100px){.subcategories{grid-template-columns:repeat(4,1fr)}.productGrid{grid-template-columns:repeat(3,1fr)}.catalogTop{grid-template-columns:1fr 260px}.catalogTop>button{display:none}.detail{gap:30px}.keySpecs{grid-template-columns:repeat(3,1fr)}.keySpecs span{margin-bottom:15px}.variants{grid-template-columns:120px 1fr 1fr}.variants>div:last-child{grid-column:2/4}.related>div:last-child{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:800px){.categoryHero{grid-template-columns:1fr}.heroProduct{height:220px}.subcategories{grid-template-columns:repeat(2,1fr)}.catalogLayout{grid-template-columns:1fr}.filters{position:static}.productGrid{grid-template-columns:repeat(2,1fr)}.detail{grid-template-columns:1fr}.galleryMain{height:360px}.variants{grid-template-columns:1fr}.variants>div,.variants>div:last-child{grid-column:auto}.specBlocks{grid-template-columns:1fr}.bottomHelp{grid-template-columns:45px 1fr}.bottomHelp a{grid-column:1/-1}.catalogCta{grid-template-columns:1fr}.catalogCta>svg{display:none}}
 @media(max-width:540px){.crumbs{padding-top:20px}.categoryHero h1{font-size:44px}.miniBenefits{flex-direction:column;gap:18px}.catalogTop{grid-template-columns:1fr}.catalogTop label{grid-row:2}.productGrid{grid-template-columns:1fr}.productCard{min-height:390px}.productVisual{height:170px}.galleryMain{height:300px;padding:28px}.thumbs button{height:76px}.keySpecs{grid-template-columns:repeat(2,1fr)}.stockLine{flex-direction:column}.variants{padding:20px}.related>div:last-child{grid-template-columns:1fr}.catalogCta{padding:26px}.bottomHelp{margin-bottom:48px}}
+
+@media (min-width: 1101px) {
+  .categoryHero { min-height: 455px; align-items: start; padding-top: 55px; }
+  .categoryHero > div:first-child { padding-left: 50px; }
+  .categoryHero > div:first-child > h1,
+  .categoryHero > div:first-child > p { transform: translateY(-21px); }
+  .categoryHero h1 { margin-bottom: 28px; font-size: 72px; }
+  .categoryHero p { font-size: 18px; }
+  .heroProduct { height: 350px; padding-top: 45px; }
+  .miniBenefits { gap: 58px; margin-top: 50px; }
+  .miniBenefits span { grid-template-columns: 44px 1fr; column-gap: 14px; }
+  .miniBenefits svg { width: 40px; }
+  .subcategories { gap: 14px; margin: 50px 4px 44px; }
+  .subcategories button { min-height: 214px; gap: 7px; padding: 22px; }
+  .subcategories svg { height: 102px; }
+  .subcategories > button > svg:not(.art) { width: 66px; }
+  .subcategories b { font-size: 17px; }
+  .subcategories span { font-size: 13px; }
+  .catalogLayout { grid-template-columns: 345px 1fr; gap: 40px; margin-inline: 4px; }
+  .catalogTop { grid-template-columns: 480px 350px 220px 190px; gap: 18px; }
+  .catalogTop::after { content: "Сетка　▦　②"; height: 48px; display: grid; place-items: center; border-radius: 12px; background: #111; color: #fff; font-weight: 700; }
+  .catalogTop h2 { font-size: 38px; }
+  .productGrid { gap: 18px; }
+  .productCard { min-height: 390px; padding: 16px; }
+  .productVisual { height: 154px; }
+  .detail { padding-top: 22px; }
+  .galleryMain { height: 642px; }
+  .thumbs { gap: 18px; margin-top: 20px; }
+  .thumbs button { height: 150px; padding: 18px; }
+  .detailCopy { padding-top: 43px; }
+  .detailCopy h1 { margin-top: 46px; }
+  .keySpecs { margin: 42px 0; }
+  .bigPrice { margin-top: 46px; font-size: 44px; }
+  .orderButton { width: 370px; min-height: 86px; margin: 44px 0; padding-inline: 40px; font-size: 20px; }
+  .phone { font-size: 19px; }
+  .variants { min-height: 166px; margin-top: 20px; padding: 38px 42px; }
+  :global(.page-main):has(.catalogLayout) .catalogCta { min-height: 250px; }
+  :global(.page-main):has(.catalogLayout) .bottomHelp { min-height: 130px; }
+  :global(.page-main):has(.detail) .specBlocks article { min-height: 480px; }
+  :global(.page-main):has(.detail) .related { padding-block: 50px; }
+  :global(.page-main):has(.detail) .bottomHelp { min-height: 130px; }
+}

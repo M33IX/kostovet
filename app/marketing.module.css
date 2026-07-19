@@ -4,3 +4,58 @@
 @media(max-width:540px){.pageHero h1,.articleHero h1{font-size:44px}.cardGrid,.contactMethods,.articleGrid,.faq,.steps{grid-template-columns:1fr}.warehouse{grid-template-columns:repeat(2,1fr)}.reasons{grid-template-columns:1fr}.reason{border-right:0;border-bottom:1px solid #ddd;padding-bottom:20px}.contactMap{min-height:660px}.articleHero{gap:10px}.plateTypes{grid-template-columns:1fr}.wideCta{padding:26px}.notFound strong{font-size:140px}.notFound h1{font-size:36px}.notFound img{height:320px}}
 .map::before{display:none}.mapDiagram{display:block;width:100%;height:330px}.regionOutline{fill:none;stroke:#eeeeec;stroke-width:2}.routes line{stroke:#8c8c8c;stroke-width:1.6;vector-effect:non-scaling-stroke}.routeNodes circle{fill:#111;stroke:#fff;stroke-width:4;vector-effect:non-scaling-stroke}.routeNodes .voronezhNode{stroke-width:7}.mapLabels{fill:#111;font-size:15px;font-family:Arial,"Helvetica Neue",sans-serif}.mapLabels .voronezhLabel{font-size:17px;font-weight:700}
 @media(max-width:540px){.map{min-height:260px}.mapDiagram{height:260px}.mapLabels{font-size:17px}.mapLabels .voronezhLabel{font-size:19px}}
+
+@media (min-width: 1051px) {
+  .crumbs,
+  .pageHero,
+  .section,
+  .wideCta,
+  .blogHero,
+  .filters,
+  .articleGrid,
+  .articleHero,
+  .articleLayout,
+  .legalLayout,
+  .notFound { margin-inline: -24px; }
+  .pageHero { min-height: 470px; }
+  .pageHero h1 { font-size: 72px; }
+  .pageHero p { font-size: 19px; }
+  .heroArt { height: 390px; }
+  .section { padding-block: 68px; }
+  .step { min-height: 250px; padding: 26px; }
+  .card { min-height: 220px; padding: 30px; }
+  .blogHero { min-height: 400px; align-items: start; padding-top: 78px; }
+  .blogHero h1 { font-size: 66px; }
+  .blogArt { height: 300px; transform: translateY(-24px); }
+  .filters { gap: 18px; margin-top: 26px; margin-bottom: 68px; }
+  .filters button { min-height: 60px; padding-inline: 28px; font-size: 17px; }
+  .articleGrid { gap: 26px; }
+  .articleCover { aspect-ratio: 2 / 1; }
+  .articleCopy { padding: 28px; }
+  .articleCopy h2 { min-height: 68px; font-size: 24px; line-height: 1.25; }
+  .articleCopy p { min-height: 50px; font-size: 17px; }
+  .articleMeta { margin-top: 26px; font-size: 14px; }
+  .articleMeta svg { width: 19px; }
+  .articleHero { padding-block: 52px 66px; }
+  .articleHero h1 { font-size: 68px; }
+  .articleLayout { grid-template-columns: 210px 1fr 360px; gap: 54px; }
+  .prose { font-size: 17px; }
+  .prose h2 { font-size: 30px; }
+  .legalLayout { grid-template-columns: 300px 1fr; gap: 64px; }
+  .legalProse { max-width: 1050px; }
+  .legalProse h1 { font-size: 52px; }
+  .notFound { min-height: 820px; }
+  :global(.page-main):has(.mapLayout) .pageHero { min-height: 560px; }
+  :global(.page-main):has(.mapLayout) .section { padding-block: 100px; }
+  :global(.page-main):has(.mapLayout) .step { min-height: 300px; }
+  :global(.page-main):has(.mapLayout) .map,
+  :global(.page-main):has(.mapLayout) .mapDiagram { min-height: 400px; height: 400px; }
+  :global(.page-main):has(.mapLayout) .wideCta { min-height: 240px; }
+  :global(.page-main):has(.contactMethods) .pageHero { min-height: 540px; }
+  :global(.page-main):has(.contactMethods) .section { padding-block: 115px; }
+  :global(.page-main):has(.contactMethods) .contactMethod { min-height: 260px; }
+  :global(.page-main):has(.contactMethods) .contactMap { min-height: 480px; }
+  :global(.page-main):has(.articleLayout) .articleLayout { min-height: 2090px; }
+  :global(.page-main):has(.legalLayout) .legalLayout { min-height: 2220px; }
+  :global(.page-main):has(.notFound) .notFound { min-height: 1420px; }
+}
